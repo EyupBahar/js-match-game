@@ -4,31 +4,31 @@ document.addEventListener("DOMContentLoaded", () => {
   const cardArray = [
     {
       name: "banana",
-      img: "images/banana.png",
+      img: "/banana.png",
     },
     {
       name: "banana",
-      img: "images/banana.png",
+      img: "/banana.png",
     },
     {
       name: "carrot",
-      img: "images/carrot.png",
+      img: "/carrot.png",
     },
     {
       name: "carrot",
-      img: "images/carrot.png",
+      img: "/carrot.png",
     },
     {
       name: "cherry",
-      img: "images/cherry.png",
+      img: "/cherry.png",
     },
     {
       name: "cherry",
-      img: "images/cherry.png",
+      img: "/cherry.png",
     },
     {
       name: "eggplant",
-      img: "images/eggplant.png",
+      img: "/eggplant.png",
     },
     {
       name: "eggplant",
@@ -36,19 +36,19 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       name: "grape",
-      img: "images/grape.png",
+      img: "/grape.png",
     },
     {
       name: "grape",
-      img: "images/grape.png",
+      img: "/grape.png",
     },
     {
       name: "orange",
-      img: "images/orange.png",
+      img: "/orange.png",
     },
     {
       name: "orange",
-      img: "images/orange.png",
+      img: "/orange.png",
     },
   ];
 
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function createBoard() {
     for (let i = 0; i < cardArray.length; i++) {
       let card = document.createElement("img");
-      card.setAttribute("src", "images/question.png");
+      card.setAttribute("src", "/question.png");
       card.setAttribute("data-id", i);
       card.addEventListener("click", flipcard);
       grid.appendChild(card);
